@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+
+    <!-- action attribute for address to send info to 
+        method for post / get HTTP requests -->
+    <form action="">
+        <p>
+            <label for="username">Enter your username: </label>
+            <input id="username" type="text" placeholder="Username"
+                name="username">
+        </p>
+
+        <p>
+            <label for="password">Enter your password: </label>
+            <input id="password" type="password" placeholder="Password"
+                name="password">
+        </p>
+
+        <p>
+            <label for="fav-color">Choose your favorite color</label>
+            <input id="fav-color" type="color" name="fav-color">
+        </p>
+
+        <p>
+            <!-- number inputs can also have step, min, and max attributes -->
+            <label for="fav-number">Choose your favorite number</label>
+            <input id="fav-number" type="number" placeholder="Favorite number"
+                name="fav-number">
+        </p>
+
+        <p>
+            <input type="button" value="Do NOT submit">
+            <!-- This button will NOT submit form -->
+
+
+        </p>
+        <!-- Buttons in form submit form by default unless explicitly specified not to -->
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <!-- Sample forms from other sites -->
+    <h2>Hijacking Searches</h2>
+
+    <h3>Reddit Search Form</h3>
+
+    <form action="https://www.reddit.com/search/">
+        <label for="reddit-search">Search: </label>
+        <input type="text" name="q" id="reddit-search"
+            placeholder="Search Reddit">
+
+        <button>Search Reddit!</button>
+    </form>
+
+    <h3>Google Search Form</h3>
+
+    <form action="https://www.google.com/search">
+        <label for="google-search">Search Google</label>
+        <input type="text" name="q" id="google-search"
+            placeholder="Search Google">
+
+        <button>Search Google!</button>
+    </form>
+
+    <h3>Youtube Search Form</h3>
+
+    <form action="https://www.youtube.com/results">
+        <label for="youtube-search">Search Youtube</label>
+        <input type="text" name="search_query" id="youtube-search"
+            placeholder="Search Youtube">
+
+        <button>Search Youtube!</button>
+    </form>
+
+    <hr>
+
+    <h2>More inputs</h2>
+    <p>Radio and Select buttons!</p>
+
+    <form action="">
+        <input type="checkbox" name="terms" id="terms-of-service" checked>
+        <label for="terms-of-service">I agree to the Terms of Service</label>
+
+        <p>
+            <input type="radio" name="size" id="small" value="s">
+            <label for="small">Small</label>
+
+            <input type="radio" name="size" id="medium" value="m">
+            <label for="medium">Medium</label>
+
+            <input type="radio" name="size" id="large" value="l">
+            <label for="large">Large</label>
+        </p>
+
+        <p>
+            <label for="meal">Please select an entre</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak" selected>Steak</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="guests">Number of Guests: </label>
+            <input type="range" name="guests" value="0" id="guests" min="0"
+                max="3" step="1">
+        </p>
+
+        <p>
+            <label for="requests">List special requests: </label>
+            <textarea name="requests" id="requests" cols="40" rows="10"
+                placeholder="Type something here"></textarea>
+        </p>
+
+        <button>Submit</button>
+    </form>
+
+    <hr>
+
+    <h2>Validation Demo</h2>
+
+    <form action="">
+        <!-- Required field -->
+        <p>
+            <label for="first-name">Enter First Name </label>
+            <input type="text" name="f_name" id="first-name" required>
+        </p>
+
+        <!-- Minimum and maximum lenghts -->
+        <p>
+            <label for="username-validation">Username </label>
+            <input type="text" id="username-validation" name="username"
+                minlength="5" maxlength="20" required>
+        </p>
+
+        <!-- Pattern checks
+            We can pass a regex to patter attribute, other fields have default
+            patterns like email -->
+        <p>
+            <label for="email-validation">Email </label>
+            <input type="email" name="email" id="email-validation" required>
+        </p>
+        <p>
+            <label for="url-validation">LinkedIn </label>
+            <input type="url" name="url" id="url-validation" required>
+        </p>
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

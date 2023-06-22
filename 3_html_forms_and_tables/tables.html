@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heaviest Birds</title>
+</head>
+
+<body>
+    <h1>Heaviest Birds</h1>
+
+    <!-- Table elements:
+    td: table data (single cell containing data)
+    tr: table row
+    th: table header, similar to td but for headers
+    thead: wraps rows of headers
+    tbody: wraps rows of body
+    tfoot: wraps rows of footers
+     -->
+    <table>
+        <!-- Table header -->
+        <thead>
+            <tr>
+                <th>Animal</th>
+                <th>Average Mass [kg (lb)]</th>
+                <th>Maximum Mass [kg (lb)]</th>
+                <th>Flighted</th>
+            </tr>
+        </thead>
+
+        <!-- Table body -->
+        <tbody>
+            <tr>
+                <td>Ostrich</td>
+                <td>104 (230)</td>
+                <td>156.8 (346)</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90 (200)</td>
+                <td>130 (287)</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5 (29.8)</td>
+                <td>39 (86)</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>V2</h2>
+    <p>Using the rowspan and colspan attributes to make multi-row headers</p>
+    <table>
+        <!-- Table header -->
+        <thead>
+            <tr>
+                <th rowspan="2">Animal</th>
+                <th colspan="2">Average Mass</th>
+                <th rowspan="2">Flighted</th>
+            </tr>
+            <tr>
+                <th>kg</th>
+                <th>lb</th>
+            </tr>
+        </thead>
+
+        <!-- Table body -->
+        <tbody>
+            <tr>
+                <td>Ostrich</td>
+                <td>104</td>
+                <td>230</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>90</td>
+                <td>200</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Wild Turkey</td>
+                <td>13.5</td>
+                <td>29.8</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
