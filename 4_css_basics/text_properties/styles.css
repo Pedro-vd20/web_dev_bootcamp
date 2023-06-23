@@ -1,0 +1,30 @@
+h1 {
+    /* Where the text is aligned within the element */
+    text-align: center;
+    font-weight: 400;
+    /* text decoration covers decorative lines (underline, overline,
+        strikethrough)
+        We can also specify color of underline and style (dotted, line...)
+        And thickness */
+    text-decoration: red wavy underline;
+    letter-spacing: 10px;
+    font-size: 60px;
+}
+
+a {
+    /* remove underline in links */
+    text-decoration: none;
+}
+
+p {
+    /* line spacing not text, multiple units like rem, %, px */
+    line-height: 2;
+    /* font size can be specified with absolute units (px) or relative
+        (em, rem) */
+    font-size: 20px;
+    /* Font families can be sepcified in list. If the first isn't found, the
+        second is applied and so on */
+    font-family: "Segoe UI", verdana, sans-serif;
+}
+
+/* For font-weight, 400 is normal, 700 is bold */

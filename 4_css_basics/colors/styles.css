@@ -1,0 +1,22 @@
+h1 {
+    color: blue;
+}
+
+h2 {
+    /* hex mode of color selection */
+    color: #5FCFFC;
+    /* rgb mode of color selection */
+    background-color: rgb(89, 151, 0);
+}
+
+button {
+    color: magenta;
+    background-color: cyan;
+}
+
+p {
+    color: olive;
+    background: orange;
+    /* backgroun can change more than just color while background-color is
+        exclusive to the color */
+}
