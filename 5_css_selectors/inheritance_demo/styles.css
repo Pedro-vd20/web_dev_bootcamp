@@ -1,0 +1,22 @@
+/* Though the body has no text to color, all elements nested within body will 
+    inherit the color unless explicitly specified */
+body {
+    color: purple;
+}
+
+/* section is more specific to body and thus trumps */
+section {
+    color: aqua;
+}
+
+form {
+    color: greenyellow;
+}
+
+/* buttons and input don't happen to inherit styles from the form but that can
+    be overwritten */
+/* Not all properties can be inherited */
+button,
+input {
+    color: inherit;
+}
