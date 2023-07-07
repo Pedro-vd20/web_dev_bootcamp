@@ -1,0 +1,31 @@
+h1 {
+    background-color: palegoldenrod;
+    border: 1px black solid;
+    /* hide an element */
+    display: none;
+}
+
+span {
+    background-color: paleturquoise;
+    border: 1px black solid;
+    padding: 50px;
+    display: inline-block;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+/* Display values:
+    inline
+    block 
+    inline-block */
+
+/* For inline elements, width / height properties are ignored padding / margin
+    is only properly respected horizontally  */
+/* Inline-block elements behave inline by not pushing other elments to new 
+    lines but have full margin / padding, width / height properties */

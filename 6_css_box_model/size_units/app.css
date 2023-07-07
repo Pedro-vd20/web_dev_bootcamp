@@ -1,0 +1,70 @@
+#percentages {
+    background-color: #6d6875;
+    width: 800px;
+    height: 800px;
+}
+
+#percentages div {
+    background-color: #e5989b;
+    /* Percentage units relative to parent element */
+    width: 70%;
+    height: 50%;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    /* Percentage unit relative to the element's properties themselves */
+    line-height: 200%;
+}
+
+#ems h2 {
+    /* relative units to parent (only for font-size). 1em -> same size as 
+        parent, 2em -> twice */
+    font-size: 2em;
+    /* relative unit to font-size */
+    margin-left: 1em;
+}
+
+#ems {
+    font-size: 15px;
+}
+
+#mes p {
+    font-size: 0.8em;
+}
+
+#ems h3 {
+    font-size: 1.5em;
+}
+
+button {
+    background-color: #2a9d8f;
+    color: white;
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+}
+
+#ems ul {
+    /* Since em are based on parent font-size, having nested elements have a
+        scaling effect */
+    font-size: 0.7em;
+}
+
+/* rem are relative to root element <html> */
+#rems h2 {
+    font-size: 3rem;
+}
+
+#rems h3 {
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 0.8rem;
+}
+
+#rems button {
+    font-size: 1.5rem;
+}
